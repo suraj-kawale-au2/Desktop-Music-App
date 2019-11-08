@@ -1,0 +1,37 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    
+    .content{
+        display: flex;
+        height: 100vh;
+
+        .center{
+            flex:1 ;
+        }
+        .leftsidebar{
+            flex:0 0 15vw;
+            background-color:#F3F3F3 ;
+        }
+        .rightsidebar{
+            flex:0 0 20vw;
+            background-color: #F3F3F3;
+        }
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .content{
+        display: flex;
+        
+        .leftsidebar{
+            display: none;
+        }
+
+        .rightsidebar{
+            display: none;
+        }
+    }
+}
