@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { MDBNavbar, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem,MDBIcon} from 'mdbreact';
 import './header.styles.scss';
 
@@ -30,13 +31,13 @@ class Header extends React.Component {
                     
                         <button className="btn btn-primary rounded">Create Playlist {"   "} <MDBIcon icon="list" /></button>
                     <MDBNavItem>
-                        Featured Tracks
+                        <Link to="/featured">Featured Tracks</Link> 
                     </MDBNavItem>
                     <MDBNavItem>
-                        Charts
+                        <Link to="/charts">Charts</Link> 
                     </MDBNavItem>
                     <MDBNavItem>
-                        Videos
+                        <Link to="/videos">Videos</Link> 
                     </MDBNavItem>
                 </MDBNavbarNav>
                 <MDBNavbarNav right className="navbar-right">
